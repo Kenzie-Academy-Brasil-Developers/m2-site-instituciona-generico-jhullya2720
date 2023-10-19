@@ -1,0 +1,11 @@
+@import url(./globalStyles.css);
+
+:root{
+    --color-primary:#4C6EF5;
+    --gray-one:#191C1F;
+    --gray-twoo:#212529;
+    --gray-tree: #ADB5BD;
+    --gray-for:#ADB5BD;
+    --gray-five:#EDF2FF;
+    
+}
