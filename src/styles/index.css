@@ -1,11 +1,827 @@
 @import url(./globalStyles.css);
 
-:root{
-    --color-primary:#4C6EF5;
-    --gray-one:#191C1F;
-    --gray-twoo:#212529;
-    --gray-tree: #ADB5BD;
-    --gray-for:#ADB5BD;
-    --gray-five:#EDF2FF;
+
+.main__container {
+    max-width: 1256px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+    font-size: 100%;
+    height: 100%;
+
+}
+
+.header {
+    max-width: 100%;
+    height: 5rem;
+    position: sticky;
+    top: 0; 
+    z-index: 1;
+    background-color: var(--gray-one);
+    color: var(--gray-seven);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid var(--color-primary);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+}
+
     
+
+.header__button {
+    background-color: var(--gray-one);
+    color: var(--gray-seven);
+    padding: 0.6rem;
+    border: solid 1px white;
+    font-family: 'Inter', sans-serif;
+}
+
+.banner {
+    margin: 0 auto;
+    display: flex;
+    padding: 12.5rem 1.875rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.75rem;
+    background-color: var(--gray-two);
+}
+
+.banner__title {
+    color: var(--gray-six);
+    align-items: center;
+    font-size: var(--font-size-title-600);
+    line-height: 140%;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+}
+
+span {
+    color: var(--color-primary);
+    font-family: 'Inter', sans-serif;
+}
+
+.banner__paragraph {
+    color: var(--gray-for);
+    align-items: center;
+    text-align: center;
+    font-size: var(--font-size-text-300);
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+
+}
+
+.banner__button {
+    display: flex;
+    height: 3.75rem;
+    padding: 1.25rem 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border: 1px solid var(--color-primary);
+    background-color: var(--color-primary);
+    color: var(--gray-seven);
+    text-align: center;
+    font-size: var(--font-size-text-100);
+    font-family: 'Inter', sans-serif;
+}
+
+.about {
+    background-color: var(--gray-one);
+    display: flex;
+    padding: 8rem;
+    align-items: center;
+    max-width: 100%;
+}
+
+.about__title {
+    display: flex;
+    width: 48%;
+    height: 20%;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--gray-six);
+    font-family: 'Inter', sans-serif;
+    font-size: var(--font-size-title-500);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+
+}
+
+.about_paragraph {
+    width: 31.25rem;
+    color: var(--gray-five);
+    text-align: justify;
+    font-family: 'Inter', sans-serif;
+    font-size: --font-size-text-300;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+
+}
+
+.faq {
+    max-width: 100%;
+    display: flex;
+    padding: 5rem 6rem;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 3rem;
+    background-color: var(--gray-two);
+}
+
+.faq__doubt {
+    display: flex;
+    width: 48%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    position: sticky;
+    top: 8rem;
+    left: 2rem;
+    z-index: 0;
+
+}
+
+.faq__doubt--title {
+    color: var(--gray-six);
+    font-size: var(--font-size-title-500);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+    font-family: 'Inter', sans-serif;
+}
+
+.faq__doubt--paragraph {
+    align-self: stretch;
+    color: var(--gray-for);
+    text-align: justify;
+    font-family: 'Inter', sans-serif;
+    font-size: var(font-size-text-300);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    width: 20rem;
+}
+
+.faq__doubt--button {
+    display: flex;
+    height: 3.75rem;
+    padding: 1.25rem 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+    border: 1px solid var(--color-primary);
+    background-color: var(--color-primary);
+    color: var(--gray-seven);
+    text-align: center;
+    font-size: var(--font-size-text-100);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    font-family: 'Inter', sans-serif;
+
+
+}
+
+.faq__list {
+    display: flex;
+    width: 36rem;
+    flex-direction: column;
+    align-items: flex-start;
+    /* gap: 1rem; */
+    font-family: 'Inter', sans-serif;
+}
+
+.faq__list--title {
+    color: var(--gray-six);
+    text-align: center;
+    font-size: var(--font-size-title-400);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+    font-family: 'Inter', sans-serif;
+    margin-top: 2.5rem;
+
+}
+
+.faq__list--paragraph {
+
+    color: var(--gray-for);
+    text-align: justify;
+    font-size: var(--font-size-text-300);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    font-family: 'Inter', sans-serif;
+    margin-top: 1rem;
+
+}
+
+.comments {
+    
+    display: flex;
+    align-items: flex-start;
+    gap: 5rem;
+    background-color: var(--gray-two);
+
+}
+
+
+.comments__list {
+    display: flex;
+    width: 0%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4rem;
+    padding: 2rem;
+}
+
+
+.comments__list--li {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.comments__list--div {
+    display: flex;
+    /* width: 12rem; */
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    flex-shrink: 0;
+}
+
+.comments__list--title {
+    color: var(--gray-six);
+    font-family: "Inter", sans-serif;
+    font-size: var(--font-size-title-400);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+
+}
+
+.comments__list--paragraph-one {
+    width: 11rem;
+    height: 1.68rem;
+    color: var(--gray-for);
+    font-family: "inter", sans-serif;
+    font-size: var(--font-size-text-100);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+
+}
+
+.comments__list--paragraph-two {
+    width: 25.75rem;
+    height: 11rem;
+    flex-shrink: 0;
+    color: var(--gray-five);
+    text-align: justify;
+    font-family: "Inter", sans-serif;
+    font-size: var(--font-size-text-200);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+
+}
+
+.comments__boxBlue--div {
+
+    align-items: flex-start;
+    position: sticky;
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: var(--color-primary);
+    margin-top: 20%;
+    top: 8rem;
+    width: 20rem;
+    margin-left: 40rem;
+    margin-top: 0;
+
+}
+
+.comments__boxBlue--title {
+
+    color: var(--gray-seven);
+    font-family: "Inter", sans-serif;
+    font-size: var(--font-size-title-500);
+    line-height: 140%;
+    font-weight: 600;
+
+}
+
+.comments__boxBlue--paragraph {
+    color: var(--gray-seven);
+    text-align: justify;
+    font-family: "Inter", sans-serif;
+    font-size: var(--font-size-text-300);
+    font-style: normal;
+    line-height: 150%;
+    font-weight: 400;
+
+}
+
+.footer {
+    display: flex;
+    max-width: 100%;
+    height: 6.30rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.62rem;
+    background-color: var(--gray-one);
+    color: var(--gray-six);
+}
+
+dialog{
+    margin-top: 5rem;
+    width: 34rem;
+    height: 30rem;
+    padding: 0;
+    border: 2px solid var(--color-primary);
+    align-items: center;
+    background-color: var(--gray-two);
+
+
+}
+
+.modal__container{
+    
+    width: 31.5rem;
+    height: 24rem;
+    display: inline-flex;
+    padding: 2rem 1rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+
+}
+.header__modal{
+    display: flex;
+    gap: 19rem;
+
+}
+.header__modal h1{
+    color: var(--gray-seven);
+    font-size: var(--font-size-title-400);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+    align-items: flex-start;
+}
+.modal__container span{
+    display: flex;
+    width: 2.3rem;
+    height: 2rem;
+    background-color: var(--gray-three);
+    align-items: center;
+    justify-content: center;
+}
+.modal__container p{
+    font-family: "Inter", sans-serif;
+    font-size: var(--font-size-text-100);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    color: var(--gray-five);
+    width: 30rem;
+    align-items: center;
+}
+
+#email{
+    display: flex;
+    width: 28rem;
+    padding: 0.90rem;
+    font-size: var(--font-size-text-300);
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    background-color: var(--gray-one);
+    border: 1px solid var(--gray-one);
+}
+.modal__container button{
+    display: flex;
+    width: 30rem;
+    padding: 0.90rem;
+    justify-content: center;
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    color: var(--gray-seven);
+    font-family: "Inter", sans-serif;
+    font-size: var(--font-size-text-100);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    border-radius: 2px;
+    cursor: pointer;
+
+
+}
+
+dialog::backdrop{
+    background-color: rgba(0,0, 0, 0.6);
+  }
+  
+  
+
+  @media(max-width: 1024px) and (min-width: 768px){
+    .banner__title{
+
+        font-size:  2.5rem;
+    }
+    .about{
+        padding: 4rem;
+    }
+    .about__title{
+        font-size: 2rem;
+    }
+    .about_paragraph{
+        font-size: 1rem;
+    }
+    .faq{
+        padding: 3rem;
+
+    }
+    .faq__doubt{
+        margin-top: 2.5rem;
+    }
+
+    .faq__doubt--title{
+        font-size: 1.5rem;
+    }
+    .faq__doubt--paragraph{
+        font-size: 0.9rem;
+        width: 17rem;
+        
+    }
+    .faq__doubt--button{
+        padding: 0.5rem;
+        font-size: 0.8rem;
+    }
+    .faq__list--title{
+        font-size: 1.5rem;
+    }
+    .faq__list--paragraph{
+        font-size: 1rem;
+
+    }
+    .comments__list{
+        margin-top: 5rem;
+        gap: 1rem;
+        width: 5rem;
+        padding: 1rem;
+    }
+    .comments__list--title{
+        font-size:  1.5rem;
+    }
+    .comments__list--paragraph-one{
+        font-size: 1rem;
+    }
+    
+    .comments__list--paragraph-two{
+        font-size: 1rem;
+    }
+    .comments__boxBlue--div{
+        margin-left: 28rem;
+        width: 30%;
+        padding: 1.5rem;
+        margin-top: 7rem;
+
+
+
+
+    }
+    .comments__boxBlue--title{
+        font-size:  1.5rem;
+    }
+    .comments__boxBlue--paragraph{
+        font-size: 0.9rem;
+    }
+    dialog{
+        margin-top: 5rem;
+        width: 4rem;
+        height: 30rem;
+        padding: 0;
+        border: 2px solid var(--color-primary);
+        align-items: center;
+        background-color: var(--gray-two);
+    
+    
+    }
+
+  }
+  @media(max-width: 768px) and (min-width: 425px){
+    body{
+        width: 100%;
+    }
+    .banner{
+        padding: 5rem;
+
+
+    }
+    .banner__title{
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+    .banner__paragraph{
+        font-size: 1rem;
+    }
+    .banner__button{
+        padding: 1rem;
+        height: 1rem;
+        font-size: .8rem;
+        font-weight: 600;
+        line-height: 160%;
+
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+    }
+    .about__title{
+        font-size: 1.8rem;
+    }
+
+    .about_paragraph{
+        width: 100%;
+    }
+    .faq{
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: sticky;
+    }
+    .faq__doubt{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        position: static;
+    }
+    .faq__doubt--title{
+        font-size: 1.8rem;
+
+    }
+    .faq__doubt--paragraph{
+        width: 100%;
+    }
+    .faq__doubt--button{
+        width: 100%;
+        padding: 1rem;
+        font-size: 1rem;
+    }
+    .faq__list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .faq__list--title{
+        font-size: 1.5rem;
+    }
+    .faq__list--paragraph{
+        font-size: 1rem;
+        width: 100%;
+    }
+    .comments{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 1rem;
+        justify-content: center;
+        gap: 1rem;
+        
+    }
+    
+    .comments__boxBlue--div{
+        margin: 0;
+        margin-left: 0;
+        width: 75%;
+        position: static;
+        top: 0;
+        padding: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .comments__boxBlue--title{
+    font-size: 1.8rem;
+    }
+    .comments__list{
+        display: flex;
+    }
+    .comments__list--div{
+
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        gap: 1rem;
+    }
+    .comments__list--title{
+        font-size: 1.5rem;
+    }
+    .comments__list--paragraph-one{
+        font-size: .9rem;
+    }
+    .comments__list--li{
+        display: flex;
+        flex-direction: column;
+ 
+    }
+    .comments__list--paragraph-two{
+        font-size: 1rem;
+        width: 42rem
+    }
+    dialog{
+        margin-top: 5rem;
+        width: 30rem;
+        height: 25rem;
+        padding: 0;
+        margin-top: 8rem;
+    
+    
+    }
+    .modal__container{
+        width: 30rem;
+        height: 25rem;
+        padding: 0;
+    }
+    .header__modal h1{
+        font-size: 1.5rem;
+    }
+    .closeModal{
+        font-size: 1rem;
+    }
+    .modal__container p{
+        width: 28rem;
+    }
+    #email{
+        width: 26rem;
+        font-size: 1rem;
+        padding: 1rem;
+    }
+    .modal__container button{
+        width: 28rem;
+        font-size: 1rem;
+        padding: 1rem;
+        
+    }
+
+}
+
+@media(max-width: 425px){
+    .header{
+        display: flex;
+        justify-content: left;
+        padding-left: 1rem;
+        margin: 0;
+    }
+    .header__button{
+        display: none;
+    }
+    .banner{
+        padding: 1.5rem;
+    }
+
+    .banner__paragraph{
+        font-size: 1rem;
+    
+    }
+    .banner__button{
+        padding: 1.5rem;
+        font-size: .8rem;
+    }
+    .about{
+        padding: 1rem;
+    }
+    .about__title{
+        padding-top: 1rem;
+        font-size: 1.3rem;
+    }
+    .about_paragraph{
+        font-size: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .faq{
+        display: flex;
+        gap: 1rem;
+    }
+    .faq__doubt{
+        padding: 1rem;
+    }
+    .faq__doubt--title{
+        font-size: 1.3rem;
+    }
+    .faq__doubt--paragraph{
+        font-size: 1rem;
+    }
+    .faq__doubt--button{
+        padding: 1rem;
+        font-size: 0.8rem;
+    }
+    .faq__list{
+        padding: 1rem;
+    }
+    .faq__list--title{
+        font-size: 1.3rem;
+    }
+    .faq__list--paragraph{
+        font-size: 1rem;
+    }
+    .comments{
+
+        padding: 0.5rem;
+    }
+    .comments__boxBlue--div{
+        width: 18.5rem;
+        padding: 3rem;
+    }
+    .comments__boxBlue--title{
+        font-size: 1.5rem;
+    }
+    .comments__boxBlue--paragraph{
+        font-size: 1rem;
+    }
+    .comments__list{
+        padding: 1rem;
+        gap: .5rem;
+    }
+
+    .comments__list--title{
+        font-size: 1.3rem;
+    }
+    .comments__list--paragraph-one{
+        margin-top: .5rem;
+        font-size: 0.8rem;
+    }
+    .comments__list--paragraph-two{
+        font-size: 1rem;
+        width: 23rem;
+    }
+    dialog{
+        margin-top: 2rem;
+        width: 22rem;
+        height: 20rem;
+        padding: 0;
+        margin-top: 8rem;
+    
+    
+    }
+    .modal__container{
+        gap: 1rem;
+        width: 20rem;
+        height: 18rem;
+        padding: 1rem;
+    }
+    .header__modal{
+        gap: 10rem;
+    }
+    .header__modal h1{
+        font-size: 1.3rem;
+        padding-right: 2rem;
+    }
+    .modal__container span{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .closeModal{
+        font-size: .8rem;
+    }
+    .modal__container p{
+        font-size: .8rem;
+        width: 20rem;
+        padding-left: 1rem;
+    }
+    #email{
+        width: 18rem;
+        font-size: 1rem;
+        padding: 1rem;
+    }
+    .modal__container button{
+        width: 20rem;
+        font-size: 0.8rem;
+        padding: 1rem;
+
+        
+    }
+
 }
