@@ -11,12 +11,12 @@
     --gray-seven: #F8F9FA;
 
 
-    --font-primary: "inter", sans-serif;
-    --font-size-title-600: 3.25rem;
-    --font-size-title-500: 2.5rem;
-    --font-size-title-400: 2rem;
-    --font-size-text-300: 1.25rem;
-    --font-size-text-200: 1.12rem;
-    --font-size-text-100: 1rem;
+    
+    --font-size-title-600: clamp(1.3rem, 0.303rem + 3.755vw, 3.25rem);
+    --font-size-title-500: clamp(1rem, 0.233rem + 2.888vw, 2.5rem);
+    --font-size-title-400: clamp(1rem, 0.489rem + 1.925vw, 2rem);
+    --font-size-text-300: clamp(0.9rem, 0.787rem + 0.424vw, 1.12rem);
+    --font-size-text-200: clamp(0.8rem, 0.57rem + 0.866vw, 1.25rem);
+    --font-size-text-100: clamp(0.5rem, 0.244rem + 0.963vw, 1rem);
     
 }

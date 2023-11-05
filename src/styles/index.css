@@ -13,7 +13,7 @@
 
 .header {
     max-width: 100%;
-    height: 5rem;
+    height: clamp(4rem, 3.489rem + 1.925vw, 5rem);
     position: sticky;
     top: 0; 
     z-index: 1;
@@ -33,7 +33,7 @@
 .header__button {
     background-color: var(--gray-one);
     color: var(--gray-seven);
-    padding: 0.6rem;
+    padding: clamp(0.4rem, 0.298rem + 0.385vw, 0.6rem);
     border: solid 1px white;
     font-family: 'Inter', sans-serif;
 }
@@ -41,10 +41,10 @@
 .banner {
     margin: 0 auto;
     display: flex;
-    padding: 12.5rem 1.875rem;
+    padding: clamp(10rem, 8.721rem + 4.813vw, 12.5rem) clamp(1rem, 0.591rem + 1.54vw, 1.8rem);
     flex-direction: column;
     align-items: center;
-    gap: 2.75rem;
+    gap: clamp(1.5rem, 0.886rem + 2.31vw, 2.7rem);
     background-color: var(--gray-two);
 }
 
@@ -79,11 +79,11 @@ span {
 
 .banner__button {
     display: flex;
-    height: 3.75rem;
-    padding: 1.25rem 2rem;
+    height: clamp(2.5rem, 1.886rem + 2.31vw, 3.7rem);
+    padding: Clamp(1.3rem, 0.942rem + 1.348vw, 2rem);
     justify-content: center;
     align-items: center;
-    gap: 0.625rem;
+    gap: clamp(0.4rem, 0.298rem + 0.385vw, 0.6rem);
     border: 1px solid var(--color-primary);
     background-color: var(--color-primary);
     color: var(--gray-seven);
@@ -95,7 +95,7 @@ span {
 .about {
     background-color: var(--gray-one);
     display: flex;
-    padding: 8rem;
+    padding:clamp(6rem, 4.977rem + 3.851vw, 8rem);
     align-items: center;
     max-width: 100%;
 }
@@ -116,7 +116,7 @@ span {
 }
 
 .about_paragraph {
-    width: 31.25rem;
+    width: clamp(18rem, 11.224rem + 25.511vw, 31.25rem);
     color: var(--gray-five);
     text-align: justify;
     font-family: 'Inter', sans-serif;
@@ -130,10 +130,10 @@ span {
 .faq {
     max-width: 100%;
     display: flex;
-    padding: 5rem 6rem;
+    padding: clamp(3rem, 1.977rem + 3.851vw, 5rem) clamp(4rem, 2.977rem + 3.851vw, 6rem);
     align-items: flex-start;
     justify-content: space-between;
-    gap: 3rem;
+    gap: clamp(2rem, 1.489rem + 1.925vw, 3rem);
     background-color: var(--gray-two);
 }
 
@@ -142,10 +142,10 @@ span {
     width: 48%;
     flex-direction: column;
     align-items: flex-start;
-    gap: 2rem;
+    gap: clamp(1rem, 0.489rem + 1.925vw, 2rem);
     position: sticky;
-    top: 8rem;
-    left: 2rem;
+    top: clamp(6rem, 4.977rem + 3.851vw, 8rem);
+    left: clamp(1rem, 0.489rem + 1.925vw, 2rem);
     z-index: 0;
 
 }
@@ -168,16 +168,16 @@ span {
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
-    width: 20rem;
+    width: clamp(15rem, 12.443rem + 9.627vw, 20rem);
 }
 
 .faq__doubt--button {
     display: flex;
-    height: 3.75rem;
-    padding: 1.25rem 2rem;
+    height: clamp(2rem, 1.105rem + 3.369vw, 3.75rem);
+    padding: clamp(0.8rem, 0.57rem + 0.866vw, 1.25rem) clamp(1rem, 0.489rem + 1.925vw, 2rem);
     justify-content: center;
     align-items: center;
-    gap: 0.6rem;
+    gap: clamp(0.5rem, 0.449rem + 0.193vw, 0.6rem);
     border: 1px solid var(--color-primary);
     background-color: var(--color-primary);
     color: var(--gray-seven);
@@ -193,10 +193,9 @@ span {
 
 .faq__list {
     display: flex;
-    width: 36rem;
+    width: clamp(30rem, 26.931rem + 11.552vw, 36rem);
     flex-direction: column;
     align-items: flex-start;
-    /* gap: 1rem; */
     font-family: 'Inter', sans-serif;
 }
 
@@ -208,7 +207,7 @@ span {
     font-weight: 600;
     line-height: 160%;
     font-family: 'Inter', sans-serif;
-    margin-top: 2.5rem;
+    margin-top: clamp(1.5rem, 0.989rem + 1.925vw, 2.5rem);
 
 }
 
@@ -221,7 +220,7 @@ span {
     font-weight: 400;
     line-height: 150%;
     font-family: 'Inter', sans-serif;
-    margin-top: 1rem;
+    margin-top: clamp(0.5rem, 0.244rem + 0.963vw, 1rem);
 
 }
 
@@ -229,7 +228,7 @@ span {
     
     display: flex;
     align-items: flex-start;
-    gap: 5rem;
+    gap: clamp(3rem, 1.977rem + 3.851vw, 5rem);
     background-color: var(--gray-two);
 
 }
@@ -240,23 +239,22 @@ span {
     width: 0%;
     flex-direction: column;
     align-items: flex-start;
-    gap: 4rem;
-    padding: 2rem;
+    gap: clamp(3rem, 2.489rem + 1.925vw, 4rem);
+    padding: clamp(1rem, 0.489rem + 1.925vw, 2rem);
 }
 
 
 .comments__list--li {
     display: flex;
     align-items: flex-start;
-    gap: 1rem;
+    gap: clamp(0.5rem, 0.244rem + 0.963vw, 1rem);
 }
 
 .comments__list--div {
     display: flex;
-    /* width: 12rem; */
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.5rem;
+    gap: clamp(0.3rem, 0.198rem + 0.385vw, 0.5rem);
     flex-shrink: 0;
 }
 
@@ -271,8 +269,8 @@ span {
 }
 
 .comments__list--paragraph-one {
-    width: 11rem;
-    height: 1.68rem;
+    width: clamp(8rem, 6.466rem + 5.776vw, 11rem)11rem;
+    height: clamp(1rem, 0.652rem + 1.309vw, 1.68rem);
     color: var(--gray-for);
     font-family: "inter", sans-serif;
     font-size: var(--font-size-text-100);
@@ -283,8 +281,8 @@ span {
 }
 
 .comments__list--paragraph-two {
-    width: 25.75rem;
-    height: 11rem;
+    width: clamp(22rem, 20.108rem + 7.124vw, 25.7rem);
+    height: clamp(8rem, 6.466rem + 5.776vw, 11rem);
     flex-shrink: 0;
     color: var(--gray-five);
     text-align: justify;
@@ -301,14 +299,14 @@ span {
     align-items: flex-start;
     position: sticky;
     display: flex;
-    padding: 1rem;
+    padding: clamp(0.5rem, 0.244rem + 0.963vw, 1rem);
     flex-direction: column;
-    gap: 2rem;
+    gap: clamp(1.3rem, 0.942rem + 1.348vw, 2rem);
     background-color: var(--color-primary);
     margin-top: 20%;
-    top: 8rem;
-    width: 20rem;
-    margin-left: 40rem;
+    top: clamp(6rem, 4.977rem + 3.851vw, 8rem);
+    width:clamp(16rem, 13.954rem + 7.702vw, 20rem);
+    margin-left: clamp(28rem, 23.909rem + 15.403vw, 36rem);
     margin-top: 0;
 
 }
@@ -337,19 +335,19 @@ span {
 .footer {
     display: flex;
     max-width: 100%;
-    height: 6.30rem;
+    height: clamp(4.3rem, 3.277rem + 3.851vw, 6.3rem);
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 0.62rem;
+    gap: clamp(0.4rem, 0.298rem + 0.385vw, 0.6rem);
     background-color: var(--gray-one);
     color: var(--gray-six);
 }
 
 dialog{
-    margin-top: 5rem;
-    width: 34rem;
-    height: 30rem;
+    margin-top: clamp(3rem, 1.977rem + 3.851vw, 5rem);
+    width: clamp(30rem, 27.954rem + 7.702vw, 34rem);
+    height: clamp(24rem, 20.931rem + 11.552vw, 30rem);
     padding: 0;
     border: 2px solid var(--color-primary);
     align-items: center;
@@ -360,19 +358,19 @@ dialog{
 
 .modal__container{
     
-    width: 31.5rem;
-    height: 24rem;
+    width:clamp(24rem, 20.164rem + 14.44vw, 31.5rem);
+    height: clamp(20rem, 17.954rem + 7.702vw, 24rem);
     display: inline-flex;
-    padding: 2rem 1rem;
+    padding: clamp(1.3rem, 0.942rem + 1.348vw, 2rem) clamp(0.5rem, 0.244rem + 0.963vw, 1rem);
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: clamp(1.3rem, 0.942rem + 1.348vw, 2rem);
     justify-content: center;
 
 }
 .header__modal{
     display: flex;
-    gap: 19rem;
+    gap: clamp(15rem, 12.954rem + 7.702vw, 19rem);
 
 }
 .header__modal h1{
@@ -385,8 +383,8 @@ dialog{
 }
 .modal__container span{
     display: flex;
-    width: 2.3rem;
-    height: 2rem;
+    width: clamp(1.8rem, 1.544rem + 0.963vw, 2.3rem);
+    height: clamp(1.3rem, 0.942rem + 1.348vw, 2rem);
     background-color: var(--gray-three);
     align-items: center;
     justify-content: center;
@@ -398,14 +396,14 @@ dialog{
     font-weight: 400;
     line-height: 150%;
     color: var(--gray-five);
-    width: 30rem;
+    width: clamp(26rem, 23.954rem + 7.702vw, 30rem);
     align-items: center;
 }
 
 #email{
     display: flex;
-    width: 28rem;
-    padding: 0.90rem;
+    width: clamp(24rem, 21.954rem + 7.702vw, 28rem);
+    padding: clamp(0.6rem, 0.447rem + 0.578vw, 0.9rem);
     font-size: var(--font-size-text-300);
     font-family: "Inter", sans-serif;
     font-style: normal;
@@ -416,8 +414,8 @@ dialog{
 }
 .modal__container button{
     display: flex;
-    width: 30rem;
-    padding: 0.90rem;
+    width: clamp(25rem, 22.443rem + 9.627vw, 30rem);
+    padding: clamp(0.6rem, 0.447rem + 0.578vw, 0.9rem);
     justify-content: center;
     background-color: var(--color-primary);
     border: 1px solid var(--color-primary);
@@ -439,83 +437,83 @@ dialog::backdrop{
   
   
 
-  @media(max-width: 1024px) and (min-width: 768px){
+  @media(max-width: 1024px){
     .banner__title{
 
-        font-size:  2.5rem;
+        font-size: var(--font-size-title-600);
     }
     .about{
-        padding: 4rem;
+        padding: clamp(3rem, 2.489rem + 1.925vw, 4rem);
     }
     .about__title{
-        font-size: 2rem;
+        font-size: var(--font-size-title-500);
     }
     .about_paragraph{
-        font-size: 1rem;
+        font-size: var(--font-size-text-300);
     }
     .faq{
-        padding: 3rem;
+        padding: clamp(2rem, 1.489rem + 1.925vw, 3rem);
 
     }
     .faq__doubt{
-        margin-top: 2.5rem;
+        margin-top: clamp(2rem, 1.744rem + 0.963vw, 2.5rem);
     }
 
     .faq__doubt--title{
-        font-size: 1.5rem;
+        font-size: var(--font-size-title-400);
     }
     .faq__doubt--paragraph{
-        font-size: 0.9rem;
-        width: 17rem;
+        font-size: var(--font-size-text-300);
+        width: clamp(15rem, 13.977rem + 3.851vw, 17rem);
         
     }
     .faq__doubt--button{
-        padding: 0.5rem;
-        font-size: 0.8rem;
+        padding: clamp(0.3rem, 0.198rem + 0.385vw, 0.5rem);
+        font-size: var(--font-size-text-200);
     }
     .faq__list--title{
-        font-size: 1.5rem;
+        font-size: var(--font-size-title-400);
     }
     .faq__list--paragraph{
-        font-size: 1rem;
+        font-size: var(--font-size-text-100);
 
     }
     .comments__list{
-        margin-top: 5rem;
-        gap: 1rem;
-        width: 5rem;
-        padding: 1rem;
+        margin-top: clamp(3.5rem, 2.733rem + 2.888vw, 5rem);
+        gap: clamp(0.5rem, 0.244rem + 0.963vw, 1rem);
+        width: clamp(3.5rem, 2.733rem + 2.888vw, 5rem);
+        padding: clamp(3.5rem, 2.733rem + 2.888vw, 5rem);
     }
     .comments__list--title{
-        font-size:  1.5rem;
+        font-size:  var(--font-size-title-400);
     }
     .comments__list--paragraph-one{
-        font-size: 1rem;
+        font-size: var(--font-size-text-100);
     }
     
     .comments__list--paragraph-two{
-        font-size: 1rem;
+        font-size: var(--font-size-text-100);
     }
     .comments__boxBlue--div{
-        margin-left: 28rem;
+        margin-left:clamp(25rem, 23.466rem + 5.776vw, 28rem);
         width: 30%;
-        padding: 1.5rem;
-        margin-top: 7rem;
+        padding: clamp(1rem, 0.744rem + 0.963vw, 1.5rem);
+        margin-top: clamp(5rem, 3.977rem + 3.851vw, 7rem);
 
 
 
 
     }
     .comments__boxBlue--title{
-        font-size:  1.5rem;
+        font-size: var(--font-size-title-400);
     }
     .comments__boxBlue--paragraph{
-        font-size: 0.9rem;
+        font-size:var(--font-size-text-200);
     }
     dialog{
-        margin-top: 5rem;
-        width: 4rem;
-        height: 30rem;
+        margin-top:clamp(4rem, 3.489rem + 1.925vw, 5rem);
+        width: clamp(3rem, 2.489rem + 1.925vw, 4rem);
+        height: clamp(25rem, 22.443rem + 9.627vw, 30rem);
         padding: 0;
         border: 2px solid var(--color-primary);
         align-items: center;
@@ -525,26 +523,26 @@ dialog::backdrop{
     }
 
   }
-  @media(max-width: 768px) and (min-width: 425px){
+  @media(max-width: 768px){
     body{
         width: 100%;
     }
     .banner{
-        padding: 5rem;
+        padding: clamp(4rem, 3.489rem + 1.925vw, 5rem);
 
 
     }
     .banner__title{
-        font-size: 2rem;
-        margin-top: 1rem;
+        font-size: var(--font-size-title-400);
+        margin-top: clamp(0.8rem, 0.698rem + 0.385vw, 1rem);
     }
     .banner__paragraph{
-        font-size: 1rem;
+        font-size: var(--font-size-text-100);
     }
     .banner__button{
-        padding: 1rem;
-        height: 1rem;
-        font-size: .8rem;
+        padding: clamp(0.8rem, 0.698rem + 0.385vw, 1rem);
+        height: clamp(0.8rem, 0.698rem + 0.385vw, 1rem);
+        font-size: var(--font-size-text-200);
         font-weight: 600;
         line-height: 160%;
 
@@ -552,18 +550,18 @@ dialog::backdrop{
     .about{
         display: flex;
         flex-direction: column;
-        gap: 2rem;
+        gap: clamp(1.3rem, 0.942rem + 1.348vw, 2rem);
 
     }
     .about__title{
-        font-size: 1.8rem;
+        font-size: var(--font-size-title-400);
     }
 
     .about_paragraph{
         width: 100%;
     }
     .faq{
-        padding: 2rem;
+        padding: clamp(1.3rem, 0.942rem + 1.348vw, 2rem);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -578,7 +576,7 @@ dialog::backdrop{
         position: static;
     }
     .faq__doubt--title{
-        font-size: 1.8rem;
+        font-size: var(--font-size-title-400);
 
     }
     .faq__doubt--paragraph{
@@ -586,8 +584,8 @@ dialog::backdrop{
     }
     .faq__doubt--button{
         width: 100%;
-        padding: 1rem;
-        font-size: 1rem;
+        padding: clamp(0.8rem, 0.698rem + 0.385vw, 1rem);
+        font-size: var(--font-size-text-100);
     }
     .faq__list{
         display: flex;
@@ -596,18 +594,18 @@ dialog::backdrop{
         width: 100%;
     }
     .faq__list--title{
-        font-size: 1.5rem;
+        font-size: var(--font-size-title-400);
     }
     .faq__list--paragraph{
-        font-size: 1rem;
+        font-size: var(--font-size-text-100);
         width: 100%;
     }
     .comments{
         display: flex;
         flex-direction: column-reverse;
-        padding: 1rem;
+        padding:clamp(0.8rem, 0.698rem + 0.385vw, 1rem);
         justify-content: center;
-        gap: 1rem;
+        gap: clamp(0.8rem, 0.698rem + 0.385vw, 1rem);
         
     }
     
@@ -617,13 +615,13 @@ dialog::backdrop{
         width: 75%;
         position: static;
         top: 0;
-        padding: 5rem;
+        padding: clamp(4rem, 3.489rem + 1.925vw, 5rem);
         display: flex;
         flex-direction: column;
         align-items: center;
     }
     .comments__boxBlue--title{
-    font-size: 1.8rem;
+    font-size: var(--font-size-title-400);
     }
     .comments__list{
         display: flex;
@@ -633,13 +631,13 @@ dialog::backdrop{
         display: flex;
         flex-direction:row;
         align-items: center;
-        gap: 1rem;
+        gap: clamp(0.8rem, 0.698rem + 0.385vw, 1rem);
     }
     .comments__list--title{
-        font-size: 1.5rem;
+        font-size: var(--font-size-title-400);
     }
     .comments__list--paragraph-one{
-        font-size: .9rem;
+        font-size: var(--font-size-text-100);
     }
     .comments__list--li{
         display: flex;
@@ -647,43 +645,47 @@ dialog::backdrop{
  
     }
     .comments__list--paragraph-two{
-        font-size: 1rem;
-        width: 42rem
+        font-size: var(--font-size-text-100)
+        ;
+        width: clamp(25rem, 16.306rem + 32.732vw, 42rem);
     }
     dialog{
-        margin-top: 5rem;
-        width: 30rem;
-        height: 25rem;
+        margin-top: clamp(3rem, 1.977rem + 3.851vw, 5rem);
+        width: clamp(25rem, 22.443rem + 9.627vw, 30rem);
+        height: clamp(18rem, 14.42rem + 13.478vw, 25rem)m;
         padding: 0;
-        margin-top: 8rem;
+        margin-top: clamp(5rem, 3.466rem + 5.776vw, 8rem);
     
     
     }
     .modal__container{
-        width: 30rem;
-        height: 25rem;
+        width: 20remclamp(14rem, 10.931rem + 11.552vw, 20rem);
+        height: clamp(18rem, 14.42rem + 13.478vw, 25rem);
         padding: 0;
     }
     .header__modal h1{
-        font-size: 1.5rem;
+        font-size: var(--font-size-title-400);
     }
     .closeModal{
-        font-size: 1rem;
+        font-size: var(--font-size-text-100);
     }
     .modal__container p{
-        width: 28rem;
+        width: clamp(20rem, 15.909rem + 15.403vw, 28rem);
+        font-size: var(--font-size-text-100);
+
     }
     #email{
-        width: 26rem;
-        font-size: 1rem;
-        padding: 1rem;
+        width: clamp(20rem, 16.931rem + 11.552vw, 26rem);
+        font-size:var(--font-size-text-100);
+        padding: clamp(0.5rem, 0.244rem + 0.963vw, 1rem);
     }
     .modal__container button{
-        width: 28rem;
-        font-size: 1rem;
-        padding: 1rem;
+        width: clamp(20rem, 15.909rem + 15.403vw, 28rem)rem;
+        font-size: var(--font-size-text-100);
+        padding: clamp(0.5rem, 0.244rem + 0.963vw, 1rem);
         
     }
+
 
 }
 
@@ -691,135 +693,135 @@ dialog::backdrop{
     .header{
         display: flex;
         justify-content: left;
-        padding-left: 1rem;
+        padding-left: clamp(0.5rem, 0.244rem + 0.963vw, 1rem);
         margin: 0;
     }
     .header__button{
         display: none;
     }
     .banner{
-        padding: 1.5rem;
+        padding: clamp(1rem, 0.744rem + 0.963vw, 1.5rem);
     }
 
     .banner__paragraph{
-        font-size: 1rem;
+        font-size:  var(--font-size-text-100);
     
     }
     .banner__button{
-        padding: 1.5rem;
-        font-size: .8rem;
+        padding: clamp(1rem, 0.744rem + 0.963vw, 1.5rem);
+        font-size: var(--font-size-text-100);
     }
     .about{
-        padding: 1rem;
+        padding: clamp(0.5rem, 0.244rem + 0.963vw, 1rem);
     }
     .about__title{
-        padding-top: 1rem;
-        font-size: 1.3rem;
+        padding-top: clamp(0.5rem, 0.244rem + 0.963vw, 1rem)v;
+        font-size: var(--font-size-text-200);
     }
     .about_paragraph{
-        font-size: 1rem;
-        padding-bottom: 1rem;
+        font-size: var(--font-size-text-100);
+        padding-bottom: clamp(0.5rem, 0.244rem + 0.963vw, 1rem);
     }
 
     .faq{
         display: flex;
-        gap: 1rem;
+        gap: clamp(0.5rem, 0.244rem + 0.963vw, 1rem);
     }
     .faq__doubt{
-        padding: 1rem;
+        padding: clamp(0.5rem, 0.244rem + 0.963vw, 1rem);
     }
     .faq__doubt--title{
-        font-size: 1.3rem;
+        font-size: var(--font-size-text-200);
     }
     .faq__doubt--paragraph{
         font-size: 1rem;
     }
     .faq__doubt--button{
-        padding: 1rem;
-        font-size: 0.8rem;
+        padding:clamp(0.5rem, 0.244rem + 0.963vw, 1rem);
+        font-size: var(--font-size-text-100);
     }
     .faq__list{
-        padding: 1rem;
+        padding: clamp(0.5rem, 0.244rem + 0.963vw, 1rem);
     }
     .faq__list--title{
-        font-size: 1.3rem;
+        font-size: var(--font-size-text-200);
     }
     .faq__list--paragraph{
-        font-size: 1rem;
+        font-size: var(--font-size-text-100);
     }
     .comments{
 
-        padding: 0.5rem;
+        padding: clamp(0.3rem, 0.198rem + 0.385vw, 0.5rem);
     }
     .comments__boxBlue--div{
-        width: 18.5rem;
-        padding: 3rem;
+        width: clamp(12rem, 8.676rem + 12.515vw, 18.5rem)rem;
+        padding: clamp(2rem, 1.489rem + 1.925vw, 3rem);
     }
     .comments__boxBlue--title{
-        font-size: 1.5rem;
+        font-size: var(--font-size-title-400);
     }
     .comments__boxBlue--paragraph{
-        font-size: 1rem;
+        font-size:var(--font-size-text-100);
     }
     .comments__list{
-        padding: 1rem;
-        gap: .5rem;
+        padding: clamp(0.5rem, 0.244rem + 0.963vw, 1rem);
+        gap: clamp(0.2rem, 0.047rem + 0.578vw, 0.5rem)
     }
 
     .comments__list--title{
-        font-size: 1.3rem;
+        font-size: var(--font-size-title-400);
     }
     .comments__list--paragraph-one{
-        margin-top: .5rem;
-        font-size: 0.8rem;
+        margin-top: clamp(0.2rem, 0.047rem + 0.578vw, 0.5rem);
+        font-size: clamp(0.5rem, 0.347rem + 0.578vw, 0.8rem);
     }
     .comments__list--paragraph-two{
-        font-size: 1rem;
-        width: 23rem;
+        font-size: var(--font-size-text-100);
+        width: clamp(18rem, 15.443rem + 9.627vw, 23rem);
     }
     dialog{
-        margin-top: 2rem;
-        width: 22rem;
-        height: 20rem;
+        margin-top:clamp(1rem, 0.489rem + 1.925vw, 2rem);
+        width: clamp(18rem, 15.954rem + 7.702vw, 22rem);
+        height: clamp(15rem, 12.443rem + 9.627vw, 20rem);
         padding: 0;
-        margin-top: 8rem;
+        margin-top: clamp(5rem, 3.466rem + 5.776vw, 8rem);
     
     
     }
     .modal__container{
-        gap: 1rem;
-        width: 20rem;
-        height: 18rem;
-        padding: 1rem;
+        gap: clamp(0.5rem, 0.244rem + 0.963vw, 1rem);
+        width: clamp(15rem, 12.443rem + 9.627vw, 20rem);
+        height: clamp(15rem, 13.466rem + 5.776vw, 18rem);
+        padding: clamp(0.5rem, 0.244rem + 0.963vw, 1rem);
     }
     .header__modal{
-        gap: 10rem;
+        gap: clamp(7rem, 5.466rem + 5.776vw, 10rem);
     }
     .header__modal h1{
-        font-size: 1.3rem;
-        padding-right: 2rem;
+        font-size: var(--font-size-text-200);
+        padding-right:clamp(1rem, 0.489rem + 1.925vw, 2rem);
     }
     .modal__container span{
-        width: 1.5rem;
-        height: 1.5rem;
+        width: clamp(1rem, 0.744rem + 0.963vw, 1.5rem);
+        height: clamp(1rem, 0.744rem + 0.963vw, 1.5rem)m;
     }
     .closeModal{
-        font-size: .8rem;
+        font-size: var(--font-size-text-100);
     }
     .modal__container p{
-        font-size: .8rem;
-        width: 20rem;
-        padding-left: 1rem;
+        font-size: var(--font-size-text-100);
+        width: clamp(15rem, 12.443rem + 9.627vw, 20rem); 
+        padding-left: clamp(0.5rem, 0.244rem + 0.963vw, 1rem);
     }
     #email{
-        width: 18rem;
-        font-size: 1rem;
-        padding: 1rem;
+        width: clamp(15rem, 13.466rem + 5.776vw, 18rem);
+        font-size: var(--font-size-text-100);
+        padding: clamp(0.5rem, 0.244rem + 0.963vw, 1rem);
     }
     .modal__container button{
-        width: 20rem;
-        font-size: 0.8rem;
-        padding: 1rem;
+        width: clamp(15rem, 12.443rem + 9.627vw, 20rem);;
+        font-size:var(--font-size-text-100);
+        padding: clamp(0.5rem, 0.244rem + 0.963vw, 1rem);
 
         
     }
